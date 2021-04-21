@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Formatter;
 
 public class Question2
 {
@@ -19,6 +20,8 @@ public class Question2
     System.out.println("Your Height is: " + height + "M");
     System.out.println("Your Weight is: " + weight + "KG");
     double bmi = weight / (height * height);
-    System.out.println("Your BMI is : " + bmi);
+    Formatter formatter = new Formatter();
+    formatter.format("%.2f", bmi);
+    System.out.println("Your BMI is : " + formatter.toString());
   }
 }
