@@ -19,7 +19,7 @@ public class Question2
     double weight = in.nextDouble();
     double bmi = weight / (height * height);
     Formatter formatter = new Formatter();
-    formatter.format("%.2f", bmi);
+    formatter.format("%.1f", bmi);
     System.out.println(formatter.toString());
   }
 }
