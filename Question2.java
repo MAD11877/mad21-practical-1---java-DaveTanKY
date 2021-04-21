@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Formatter;
 
 public class Question2
 {
@@ -10,7 +11,15 @@ public class Question2
      * Hint: in.nextDouble() to read double
      */
      
-    Scanner in = new Scanner(System.in);
+   
+    //System.out.print("Please Input Height in M: ");
+     Scanner in = new Scanner(System.in);
     double height = in.nextDouble();
+    //System.out.print("Please Input Weight in KG: ");
+    double weight = in.nextDouble();
+    double bmi = weight / (height * height);
+    Formatter formatter = new Formatter();
+    formatter.format("%.1f", bmi);
+    System.out.println(formatter.toString());
   }
 }
