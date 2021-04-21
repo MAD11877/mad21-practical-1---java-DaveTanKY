@@ -12,16 +12,16 @@ public class Question2
      */
      
    
-    System.out.print("Please Input Height in M: ");
+    //System.out.print("Please Input Height in M: ");
      Scanner in = new Scanner(System.in);
     double height = in.nextDouble();
-    System.out.print("Please Input Weight in KG: ");
+    //System.out.print("Please Input Weight in KG: ");
     double weight = in.nextDouble();
     System.out.println("Your Height is: " + height + "M");
     System.out.println("Your Weight is: " + weight + "KG");
     double bmi = weight / (height * height);
     Formatter formatter = new Formatter();
     formatter.format("%.2f", bmi);
-    System.out.println("Your BMI is : " + formatter.toString());
+    System.out.println(formatter.toString());
   }
 }
