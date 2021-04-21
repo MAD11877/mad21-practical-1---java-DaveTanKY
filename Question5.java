@@ -27,12 +27,10 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Please input number of Integers: ");
     int length = in.nextInt();
     int[] numberArray = new int[length] ;
     for(int i = 0; i < length; i++)
     {
-      System.out.print("Please enter Integer: ");
       numberArray[i] = in.nextInt();  
       
       
@@ -56,6 +54,6 @@ public class Question5
       }
     }
 
-    System.out.println("The mode is: " + mode);
+    System.out.println(mode);
   }
 }
