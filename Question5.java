@@ -27,6 +27,35 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    System.out.print("Please input number of Integers: ");
+    int length = in.nextInt();
+    int[] numberArray = new int[length] ;
+    for(int i = 0; i < length; i++)
+    {
+      System.out.print("Please enter Integer: ");
+      numberArray[i] = in.nextInt();  
+      
+      
+    }
+    int mode = 0;
+    int current = 0;
+    for(int x : numberArray)
+    {
+      int count = 0;
+      for(int y : numberArray)
+      {
+          if(x == y)
+          {
+            count += 1;
+          }
+      }
+      if(count > current)
+      {
+        mode = x;
+        current = count;
+      }
+    }
+
+    System.out.println("The mode is: " + mode);
   }
 }
